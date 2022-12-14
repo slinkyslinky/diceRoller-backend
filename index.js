@@ -19,14 +19,14 @@ const port = 8000;
 app.listen(port, () => {
    console.log('all work...');
 })
-// app.use(function (req, res, next) {
-//    res.setHeader('Access-Control-Allow-Origin', '*');
-//    res.setHeader('Access-Control-Allow-Methods', 'GET');
-//    res.setHeader('Access-Control-Allow-Methods', 'POST');
-//    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, content-type');
-//    res.setHeader('Access-Control-Allow-Credentials', true);
-//    next();
-// })
+app.use(function (req, res, next) {
+   res.setHeader('Access-Control-Allow-Origin', 'https://dise-roller.vercel.app');
+   res.setHeader('Access-Control-Allow-Methods', 'GET');
+   res.setHeader('Access-Control-Allow-Methods', 'POST');
+   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, content-type');
+   res.setHeader('Access-Control-Allow-Credentials', true);
+   next();
+})
 app.use(cors())
 app.use(bodyParser.json())
 
