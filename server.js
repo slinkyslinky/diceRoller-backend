@@ -16,6 +16,9 @@ import { calculateStatistic } from "./functions/calculateStatistic.js";
 const app = express();
 const port = 8000;
 
+app.listen(port, () => {
+   console.log('all work...');
+})
 // app.use(function (req, res, next) {
 //    res.setHeader('Access-Control-Allow-Origin', '*');
 //    res.setHeader('Access-Control-Allow-Methods', 'GET');
@@ -92,7 +95,3 @@ app.post('/functions/reroll', (req, res) => {
 
 
 
-
-app.listen(port, () => {
-   console.log('all work');
-})
