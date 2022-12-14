@@ -28,7 +28,8 @@ app.listen(port, () => {
 //    next();
 // })
 app.use(cors({
-   origin: 'https://dise-roller.vercel.app'
+   origin: '*',
+   methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH']
 }))
 app.use(bodyParser.json())
 
