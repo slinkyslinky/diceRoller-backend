@@ -1,0 +1,41 @@
+[
+   {
+      "name": "white",
+      "color": "white",
+      "weight": 6,
+      "values": [
+         "success",
+         "success",
+         "advant",
+         "advant",
+         "empty",
+         "empty"
+      ]
+   },
+   {
+      "name": "green",
+      "color": "green",
+      "weight": 8,
+      "values": [
+         "success",
+         "success",
+         "success",
+         "advant",
+         "advant",
+         "empty"
+      ]
+   },
+   {
+      "name": "yellow",
+      "color": "yellow",
+      "weight": 12,
+      "values": [
+         "crit",
+         "success",
+         "success",
+         "success",
+         "advant",
+         "advant"
+      ]
+   }
+]

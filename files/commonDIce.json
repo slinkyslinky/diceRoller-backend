@@ -1,0 +1,122 @@
+[
+   {
+      "name": "d4",
+      "color": "white",
+      "weight": 4,
+      "queue": 0,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         1,
+         2,
+         3,
+         4
+      ]
+   },
+   {
+      "name": "d6",
+      "color": "white",
+      "weight": 6,
+      "queue": 0,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6
+      ]
+   },
+   {
+      "name": "d8",
+      "color": "white",
+      "weight": 8,
+      "queue": 0,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+      ]
+   },
+   {
+      "name": "d10",
+      "color": "white",
+      "weight": 10,
+      "queue": 0,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10
+      ]
+   },
+   {
+      "name": "d12",
+      "color": "white",
+      "weight": 12,
+      "queue": 0,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12
+      ]
+   },
+   {
+      "name": "d20",
+      "color": "white",
+      "weight": 20,
+      "queue": 0,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12,
+         13,
+         14,
+         15,
+         16,
+         17,
+         18,
+         19,
+         20
+      ]
+   }
+]

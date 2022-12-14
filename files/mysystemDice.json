@@ -1,0 +1,98 @@
+[
+   {
+      "name": "green",
+      "color": "green",
+      "weight": 6,
+      "queue": 1,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         "success",
+         "success",
+         "advant",
+         "advant",
+         "empty",
+         "empty"
+      ]
+   },
+   {
+      "name": "blue",
+      "color": "blue",
+      "weight": 6,
+      "queue": 2,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         "success",
+         "success",
+         "success",
+         "advant",
+         "advant",
+         "empty"
+      ]
+   },
+   {
+      "name": "yellow",
+      "color": "yellow",
+      "weight": 6,
+      "queue": 3,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         "crit",
+         "success",
+         "success",
+         "success",
+         "advant",
+         "advant"
+      ]
+   },
+   {
+      "name": "brown",
+      "color": "brown",
+      "weight": 6,
+      "queue": 4,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         "failure",
+         "trouble",
+         "trouble",
+         "empty",
+         "empty",
+         "empty"
+      ]
+   },
+   {
+      "name": "violet",
+      "color": "violet",
+      "weight": 6,
+      "queue": 5,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         "failure",
+         "failure",
+         "trouble",
+         "trouble",
+         "empty",
+         "empty"
+      ]
+   },
+   {
+      "name": "red",
+      "color": "red",
+      "weight": 6,
+      "queue": 6,
+      "order": 0,
+      "value": "empty",
+      "values": [
+         "miscrit",
+         "failure",
+         "failure",
+         "trouble",
+         "trouble",
+         "empty"
+      ]
+   }
+]
