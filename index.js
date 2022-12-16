@@ -45,14 +45,15 @@ app.get('/files/mysystemImg', (req, res) => {
    res.send(text)
 })
 
-diceGetter("common")
-diceGetter("mysystem")
-diceGetter("genesys")
+systemGetter("common")
+systemGetter("mysystem")
+systemGetter("genesys")
 
-function diceGetter(system) {
-   app.get(`/files/${system}Dice`, (req, res) => {
-      let text = fs.readFileSync(`./files/${system}Dice.json`, 'utf8')
-      res.send(text)
+function systemGetter(system) {
+   app.get(`/files/${system}System`, (req, res) => {
+
+      let data = fs.readFileSync(`./files/${system}System.json`, 'utf8')
+      res.send(data)
       diceSystem = system
 
    })

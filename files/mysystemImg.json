@@ -1,8 +1,10 @@
 {
-   "success": "Cross",
-   "advant": "Lilia",
-   "trouble": "Rune",
-   "failure": "Star",
-   "crit": "Lotos",
-   "miscrit": "Vortex"
+   "images": {
+      "success": "Cross",
+      "advant": "Lilia",
+      "trouble": "Rune",
+      "failure": "Star",
+      "crit": "Lotos",
+      "miscrit": "Vortex"
+   }
 }
