@@ -48,6 +48,8 @@ app.get('/files/mysystemImg', (req, res) => {
 systemGetter("common")
 systemGetter("mysystem")
 systemGetter("genesys")
+systemGetter("gurps")
+systemGetter("pbta")
 
 function systemGetter(system) {
    app.get(`/files/${system}System`, (req, res) => {
@@ -63,8 +65,8 @@ function systemGetter(system) {
 
 
 app.post('/functions/roll', (req, res) => {
-   const rolledPool = getPoolResult(req.body);
-   const resultObject = calculatePoolResult(diceSystem, rolledPool)
+   const rolledPool = getPoolResult(req.body.pool);
+   const resultObject = calculatePoolResult(diceSystem, rolledPool, req.body.settings)
 
    res.send({ "pool": rolledPool, "result": resultObject.pool, "status": resultObject.status })
 })

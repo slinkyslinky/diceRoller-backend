@@ -2,15 +2,22 @@
    "name": "common",
    "settings": [
       {
+         "name": "RollAmount",
+         "type": "number",
+         "value": 1
+      },
+      {
          "name": "Success",
-         "type": "number"
+         "type": "number",
+         "value": -1
       },
       {
          "name": "Advant",
-         "type": "number"
+         "type": "number",
+         "value": -1
       }
    ],
-   "dice": [
+   "dices": [
       {
          "name": "d4",
          "color": "white",

@@ -8,8 +8,14 @@
       "crit": "Lotos",
       "miscrit": "Vortex"
    },
-   "settings": {},
-   "dice": [
+   "settings": [
+      {
+         "name": "RollAmount",
+         "type": "number",
+         "value": 1
+      }
+   ],
+   "dices": [
       {
          "name": "green",
          "color": "green",

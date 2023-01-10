@@ -140,7 +140,6 @@ export function mysystemStatisticRule(arrayOfResultPool) {
          "1": 0,
          "2": 0,
          "3+": 0,
-
       },
       MISCRIT: {
          "1": 0,
@@ -159,7 +158,6 @@ export function mysystemStatisticRule(arrayOfResultPool) {
          "1": 0,
          "2": 0,
          "3+": 0,
-
       },
       reducer(accamulator) {
          reducerHelper(CRIT)
@@ -183,7 +181,6 @@ export function mysystemStatisticRule(arrayOfResultPool) {
          }
 
          function reducerHelper(value) {
-
             switch (accamulator[value]) {
                case 1: statistic[value]["1"]++; break
                case 2: statistic[value]["2"]++; break
@@ -192,8 +189,6 @@ export function mysystemStatisticRule(arrayOfResultPool) {
             }
          }
       }
-
-
    }
 
    const arrayOfAccamulators = arrayOfResultPool.map(resultPool => {
@@ -260,12 +255,50 @@ export function mysystemStatisticRule(arrayOfResultPool) {
 
 }
 
+
+
+
 export function commonRollRule(pool) {
    const resultPool = []
    let resultStatus = "no result"
-
    resultPool.push(pool.reduce((acc, cur) => acc + cur, 0))
+   return { pool: resultPool, status: resultStatus }
+}
 
+export function gurpsRollRule(pool) {
+   const resultPool = []
+   let resultStatus = "no result"
+   resultPool.push(pool.reduce((acc, cur) => acc + cur, 0))
+   return { pool: resultPool, status: resultStatus }
+}
+
+export function pbtaRollRule(pool, settings) {
+   const resultPool = []
+   let resultStatus = "no result"
+   resultPool.push(pool.reduce((acc, cur) => acc + cur, 0))
+   checkSettings()
 
    return { pool: resultPool, status: resultStatus }
+
+
+   function checkSettings() {
+      settings.forEach(setting => {
+         switch (setting.name) {
+            case "Success":
+               if (resultPool[0] >= setting.value) {
+                  resultStatus = "success"
+               }
+               break;
+            case "Advant":
+               if (resultPool[0] >= setting.value) {
+                  if (resultStatus != "success")
+                     resultStatus = "advant"
+               } else resultStatus = "failure"
+               break;
+
+            default:
+               break;
+         }
+      })
+   }
 }

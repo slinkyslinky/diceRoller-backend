@@ -1,0 +1,42 @@
+{
+   "name": "pbta",
+   "preload": [
+      0,
+      0
+   ],
+   "settings": [
+      {
+         "name": "RollAmount",
+         "type": "number",
+         "value": 1
+      },
+      {
+         "name": "Success",
+         "type": "number",
+         "value": 10
+      },
+      {
+         "name": "Advant",
+         "type": "number",
+         "value": 7
+      }
+   ],
+   "dices": [
+      {
+         "name": "d6",
+         "color": "white",
+         "weight": 6,
+         "queue": 0,
+         "order": 0,
+         "value": "empty",
+         "values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+         ]
+      }
+   ]
+}
